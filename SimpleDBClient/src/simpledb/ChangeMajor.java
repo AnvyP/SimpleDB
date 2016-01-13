@@ -3,6 +3,9 @@ import java.sql.*;
 import simpledb.remote.SimpleDriver;
 
 public class ChangeMajor {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 		Connection conn = null;
 		try {
