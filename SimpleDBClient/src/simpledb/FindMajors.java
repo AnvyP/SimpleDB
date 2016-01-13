@@ -4,6 +4,8 @@ import simpledb.remote.SimpleDriver;
 
 public class FindMajors {
     public static void main(String[] args) {
+      args = new String[1];
+      args[0] = new String("");
 		String major = args[0];
 		System.out.println("Here are the " + major + " majors");
 		System.out.println("Name\tGradYear");
@@ -19,7 +21,8 @@ public class FindMajors {
 			String qry = "select sname, gradyear "
 			           + "from student, dept "
 			           + "where did = majorid "
-			           + "and dname = '" + major + "'";
+			           //+ "and dname = '" + major + "'"
+			           ;
 			ResultSet rs = stmt.executeQuery(qry);
 
 			// Step 3: loop through the result set
