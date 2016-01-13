@@ -9,6 +9,7 @@ public class ChangeMajor {
     public static void main(String[] args) {
 		Connection conn = null;
 		try {
+		  
 			Driver d = new SimpleDriver();
 			conn = d.connect("jdbc:simpledb://localhost", null);
 			Statement stmt = conn.createStatement();
